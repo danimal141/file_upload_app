@@ -30,7 +30,7 @@ function upload(res, req) {
   form.parse(req, function(error, fields, files) {
     console.log(files.upload.path)
     fs.rename(files.upload.path, "img/test.jpg", function(err) {
-      if(err) {
+      if (err) {
         console.log(err);
         fs.unlink("img/test.jpg");
         fs.rename(files.upload.path, "img/test.jpg");
@@ -46,7 +46,7 @@ function upload(res, req) {
 function show(res) {
   console.log("Request handler 'show' was called.");
   fs.readFile("img/test.jpg", function(error, file) {
-    if(error) {
+    if (error) {
       res.writeHead(500, {"Content-Type": "text/plain; charset=UTF-8"});
       res.write("OH MY GOD\n"+error+"\n");
       res.end();
