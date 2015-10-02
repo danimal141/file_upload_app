@@ -1,0 +1,27 @@
+{
+  "name": "file_upload_app",
+  "version": "1.0.0",
+  "description": "## How to use",
+  "main": "index.js",
+  "dependencies": {
+    "http": "^0.0.0",
+    "fs": "^0.0.2",
+    "url": "^0.10.1",
+    "formidable": "^1.0.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danimal141/file_upload_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danimal141/file_upload_app/issues"
+  },
+  "homepage": "https://github.com/danimal141/file_upload_app"
+}
